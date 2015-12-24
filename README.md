@@ -1,6 +1,6 @@
 # collection
 ## blog 
-- http://www.techslides.com 94,813 Indian
+- http://www.techslides.com 94,813 Indian  
 
 ## JavaScript framework
 - https://www.polymer-project.org
