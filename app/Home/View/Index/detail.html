@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <title>Website - My website collection</title>
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="../lib/jquery/dist/jquery.min.js"></script>
+        <script src="../lib/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../lib/angular/angular.min.js"></script>
+        <script src="../lib/x2js/xml2json.min.js"></script>
+        <script src="../lib/angular-xml/angular-xml.min.js"></script>
+        <style>
+            .main{margin-top: 70px;}
+        </style>
+    </head>
+    <body ng-app="webApp" ng-controller="webCtrl">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Website</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+        <div class="container main">
+            <table class="table">
+                <tr>
+                    <th>
+                        <a href="#" ng-click="sortType='cate'; sortReverse= !sortReverse">Cate
+                            <i ng-show="sortType = 'cate' && sortReverse" class="glyphicon glyphicon-chevron-up"></i>
+                            <i ng-show="sortType = 'cate' && !sortReverse" class="glyphicon glyphicon-chevron-down"></i>
+                        </a>
+                    </th>
+                    <th>
+                        <a href="#" ng-click="sortType='rank'; sortReverse= !sortReverse">Title
+                            <i ng-show="sortType = 'title' && sortReverse" class="glyphicon glyphicon-chevron-up"></i>
+                            <i ng-show="sortType = 'title' && !sortReverse" class="glyphicon glyphicon-chevron-down"></i>
+                        </a>
+                    </th>
+                    <th>
+                        <a href="#" ng-click="sortType='rank'; sortReverse= !sortReverse">URL
+                            <i ng-show="sortType = 'url' && sortReverse" class="glyphicon glyphicon-chevron-up"></i>
+                            <i ng-show="sortType = 'url' && !sortReverse" class="glyphicon glyphicon-chevron-down"></i>
+                        </a>
+                    </th>
+                    <th>
+                        <a href="#" ng-click="sortType='rank'; sortReverse= !sortReverse">Alex
+                            <i ng-show="sortType = 'rank' && sortReverse" class="glyphicon glyphicon-chevron-up"></i>
+                            <i ng-show="sortType = 'rank' && !sortReverse" class="glyphicon glyphicon-chevron-down"></i>
+                        </a>
+                    </th>
+                </tr>
+                <tr ng-repeat="x in websites | orderBy:sortType:sortReverse">
+                    <td>{{ x.cate }}</td>
+                    <td>{{ x.title }}</td>
+                    <td>{{ x.url }}</td>
+                    <td>{{ x.rank }}</td>
+                </tr>
+            </table>
+        </div>
+        <script>
+            var ngApp = angular.module("webApp", ['xml'])
+            .config(function ($httpProvider) {
+                $httpProvider.interceptors.push('xmlHttpInterceptor');
+              })
+            .controller("webCtrl", function($scope, $http) {
+                $scope.websites = [];
+                $http.get("./data/web.json")
+                .success(function(response) {
+                    $scope.websites = response;
+                    
+                    for (i = 0; i < $scope.websites.length; i++) {
+                        $scope.processWebsite($scope.websites[i], i);
+                    }
+                    //console.log(response);
+                });
+                $scope.processWebsite = function(website, index){
+                    //for ($scope.i = 0; $scope.i < $scope.websites.length; $scope.i++){
+                        $http.get('../api/index.php/alexa?url=' + website.url)
+                        .success(function(rsp) {
+                            //$scope.websites[index].rank = rsp.data.POPULARITY.TEXT;
+                            if (rsp.data && rsp.data.POPULARITY.TEXT) {
+                                $scope.websites[index].rank = rsp.data.POPULARITY.TEXT;
+                            } else {
+                                $scope.websites[index].rank = 'NO DATA';
+                            }
+                            //console.log();
+                        });
+                    //}
+                }
+            });
+        </script>
+    </body>
+</html>

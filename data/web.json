@@ -1,0 +1,114 @@
+[{
+	"title": "麦秸海淘",
+	"url": "http://www.majexpress.com/",
+	"cate": "物流软件供应商",
+	"label": "Express, Tenso"
+}, {
+	"title": "拓山科技",
+	"url": "http://www.ahtuoshan.com/",
+	"cate": "物流软件供应商",
+	"label": "Express, Tenso, 物流"
+}, {
+	"title": "全景物流通",
+	"url": "http://www.56sys.com/",
+	"cate": "物流软件供应商",
+	"label": "Express, Tenso, 物流"
+}, {
+	"title": "皇家网络科技",
+	"url": "http://www.huangjia100.com/",
+	"cate": "物流软件供应商",
+	"label": "Express, Tenso, 物流"
+}, {
+	"title": "金鹏翼流国际海淘转运",
+	"url": "http://www.jpbird.com/",
+	"cate": "国际物流服务商",
+	"label": "Express, Tenso, 物流"
+}, {
+	"title": "易软通",
+	"url": "http://www.yiruantong.com/",
+	"cate": "物流软件供应商",
+	"label": "Express, Tenso, 物流"
+}, {
+	"title": "PFC 皇家物流",
+	"url": "http://www.pfcexpress.com/",
+	"cate": "国际物流服务商",
+	"market": "中国对外",
+	"label": "Express, Tenso, 物流"
+}, {
+	"title": "7款超酷的在线代码编辑器的实现收集",
+	"url": "http://blog.csdn.net/cuixiping/article/details/6278645",
+	"cate": "科技博文"
+}, {
+	"title": "创投圈",
+	"url": "http://www.vc.cn/",
+	"cate": "创投媒体",
+	"label": "创业, 投资, 媒体"
+}, {
+	"title": "硅发布",
+	"url": "http://www.guifabu.com",
+	"cate": "创投媒体",
+	"label": "创业, 投资, 媒体"
+}, {
+	"title": "PrestaShop",
+	"url": "http://www.prestashop.com",
+	"cate": "网页程序",
+	"label": "free, software, e-commerce"
+}, {
+	"title": "1and1",
+	"url": "http://www.1and1.com",
+	"comment": "感觉 1and1 有点落伍了，现在 MySQL 还是停留在 5.5 上，有一些功能无法用",
+	"cate": "虚拟空间",
+	"label": "Web Hosting"
+}, {
+	"title": "中国建设银行",
+	"url": "http://www.ccb.com",
+	"comment": "CCB 连一个客服跟单系统都没有的国有银行",
+	"cate": "金融",
+	"label": "Bank, China"
+}, {
+	"title": "Yet Another Summer Rain",
+	"url": "http://www.liaohuqiu.net",
+	"comment": "一个会写中英文的技术博客",
+	"cate": "个人科技博客",
+	"label": "tech, blog, personal"
+}, {
+	"title": "iTHome",
+	"url": "http://www.ithome.com.tw",
+	"comment": "台湾的科技媒体网站",
+	"cate": "科技媒体",
+	"label": "tech, media"
+}, {
+	"title": "BaseCamp",
+	"url": "http://www.basecamp.com",
+	"description": "这是一个在线协作的网站，现在 Office 360 也都可以实现这些功能，这款产品再面临一系列的挑战；不过由于面向小团体， 似乎还是有不错的增长， 每个礼拜都有 8000 左右的注册量， 貌似还不错的成绩哟。老总以独特的方式采取精小型的运营方式来运作， 虽然进过 10 多年的发展， 依然保持在精简的 50 人不到的小团队。 ",
+	"cate": "在线办公协作",
+	"label": "office"
+}, {
+	"title": "differential.com",
+	"url": "http://www.differential.com",
+    "cate": "开发外包",
+	"description": "精简的小团队，为各类企业提供网站开发的服务"
+}, {
+    "title" : "36Kr",
+    "url" : "http://www.36kr.com",
+    "cate" : "科技博客",
+    "description" : "如果说 cnBeta 是中文科技博客的微软(大而全)，那么 36kr 就是中文科技博客的苹果，小而精; 虽然现在也不小"
+}, {
+    "title": "37Signals",
+    "url" : "http://www.37Signals.com",
+    "cate" : "SaaS",
+    "description" : "早期的 Web 技术外包公司，是 Basecamp 的母公司，并且是 Ruby on Rails 的发动者，早期扩展迅速，后来追求精简，奉行奥卡姆剃刀原则，被创业界认为是一朵奇葩；目前(2015年)推出了 Basecamp 3.0，面临众多同类产品的挑战，业绩下滑。"
+}, {
+    "title" : "Basecamp",
+    "url" : "http://www.basecamp.com",
+    "cate" : "在线协作",
+    "description" : "由 37Signals 推出的拳头级产品，用于在线协作办公"
+}, {
+    "title" : "cnBeta",
+    "url" : "http://www.cnBeta.com",
+    "cate" : "科技博客",
+    "description" : "2010年左右推出的科技媒体，内容风趣搞笑，最特别的地方是评论运营"
+}, {
+  "title": "简书",
+  "url": "http://www.jianshu.com/p/4607f684a597"
+}]
