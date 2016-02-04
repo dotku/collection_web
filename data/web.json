@@ -1,5 +1,5 @@
 [{
-	"title": "麦秸海淘",
+	"title" : "麦秸海淘",
 	"url": "http://www.majexpress.com/",
 	"cate": "物流软件供应商",
 	"label": "Express, Tenso"
@@ -67,6 +67,7 @@
 	"label": "Bank, China"
 }, {
 	"title": "Yet Another Summer Rain",
+<<<<<<< HEAD
 	"url": "http://www.liaohuqiu.net",
 	"comment": "一个会写中英文的技术博客",
 	"cate": "个人科技博客",
@@ -110,5 +111,18 @@
     "description" : "2010年左右推出的科技媒体，内容风趣搞笑，最特别的地方是评论运营"
 }, {
   "title": "简书",
-  "url": "http://www.jianshu.com/p/4607f684a597"
+  "url": "http://www.jianshu.com/p/4607f684a597",
+  "cate": "个人科技博客",
+},
+{
+	"url" : "http://www.liaohuqiu.net",
+	"comment" : "一个会写中英文的技术博客",
+	"cate": "个人科技博客",
+	"label": "tech, blog, personal"
+}, {
+	"title" : "iTHome",
+	"url": "http://www.ithome.com.tw",
+	"comment" : "台湾的科技媒体网站",
+	"cate": "科技媒体",
+	"label": "tech, media"
 }]
